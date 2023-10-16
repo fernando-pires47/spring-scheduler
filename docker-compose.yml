@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  spring-scheduler:
+    build: ./scheduler
+    container_name: spring-scheduler
+    environment:
+      SPRING_PROFILES_ACTIVE: "dev"
+    ports:
+      - "8080:8080"
